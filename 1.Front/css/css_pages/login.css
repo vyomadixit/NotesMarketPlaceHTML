@@ -1,0 +1,447 @@
+/* Basic CSS */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Fixing Image */
+#back-img {
+    z-index: -1;
+     top: 0;
+    right: 0;
+    position: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#login-page {
+    width: 100%;
+    height: 100%; 
+}
+
+/* Div Settings for login bar */
+
+/* LOGO */
+.logo-img {
+    top: 6%;
+    left: 45%;
+    z-index: 1;
+    margin-bottom: 5px;
+    padding: 0;
+    position: fixed;
+}
+
+/* Box */
+
+#login-box {
+    background-color: #fff;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    width: 530px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 0;
+    margin-right: 10px;
+    
+}
+
+/* Heading Setting */
+.login-heading {
+  text-align: center;
+  padding-left: 70px;
+}
+.login-heading-1 {
+    color: #6255a5;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+
+.login-heading-2 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #333333;
+}
+
+/* Form Settings Email */
+.form-email-pass {
+  margin-top: 25px;
+}
+
+.form-email label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  padding-bottom: 5px;
+}
+
+.form-email input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000;
+}
+
+/* Form Settings Password */
+.form-pass label {
+  font-size: 16px;
+  padding-top: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  padding-bottom: 5px;
+}
+
+.form-pass a {
+  margin-left: 265px; 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6255a5;
+}
+
+.form-pass input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8a8a9a;
+}
+
+.field-icon {
+  margin: -30px 0 0 0;
+  position: relative;
+  z-index: 5; 
+}
+
+/* Password */
+.pass-msg {
+  padding-top: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #ff3636;
+  margin-bottom: 10px;
+}
+
+.form-check-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  align-self: center;
+}
+
+.form-check-input {
+  border: 1px solid #d1d1d1;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+
+.btn-submit {
+  width: 480px;
+  height: 40px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #6255a5;
+  border: none;
+}
+
+.sign-page {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 10px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 20px;
+}
+
+.sign-page a {
+  color: #6255a5;
+}
+@media only screen and (min-width:1600px) {
+  #login-box {
+    left: 38%;
+    top: 22%;
+  }
+  .logo-img {
+    top: 15%;
+  }
+}
+@media only screen and (min-width:1100px) and (max-width:1600px) {
+  #login-box {
+    left: 35%;
+  }
+}
+@media only screen and (min-width:770px) and (max-width:1100px) {
+  #login-box {
+    top: 10%;
+    left: 28%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .logo-img {
+    top: 2%;
+    left: 40%;
+}
+}
+@media only screen and (min-width:660px) and (max-width:770px) {
+  #login-box {
+    top: 12%;
+    left: 18%;
+    padding-bottom: 0;
+  }
+  .logo-img {
+    top: 5%;
+    left: 32%;
+}
+}
+@media only screen and (min-width:581px) and (max-width:660px) {
+  #login-box {
+    left: 8%;
+  }
+  .logo-img {
+    left: 18%;
+}
+}
+@media only screen and (min-width:540px) and (max-width:581px) {
+  #login-box {
+    left: 1%;
+  }
+  .logo-img {
+    left: 20%;
+  
+}
+}
+
+@media only screen and  (min-width:300px) and (max-width:539px) {
+  .logo-img {
+    top: 8%;
+    left: 22%;
+}
+.logo-img img {
+  width: 200px;
+}
+
+/* Box */
+#login-box {
+    top: 16%;
+    left: 18%;
+    width: 240px;
+    padding: 10px 10px 0 10px;   
+}
+
+/* Heading Setting */
+.login-heading {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.login-heading-1 {
+    padding-bottom: 3px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.login-heading-2 {
+  font-size: 10px;
+  line-height: 12px;
+  color: #333333;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Form Settings Email */
+.form-email-pass {
+  margin-top: 0;
+}
+.form-group {
+  margin: 0 0 10px 0;
+}
+.form-email label {
+  font-size: 12px;
+  line-height: 14px;
+  padding-bottom: 0;
+}
+
+.form-email input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* Form Settings Password */
+.form-pass label {
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 14px;
+  padding-bottom: 0;
+}
+
+.form-pass a {
+  margin-left: 60px; 
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.form-pass input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* Password */
+.pass-msg {
+  padding-top: 2px;
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.form-check-label {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-check-input {
+  width: 10px;
+  height: 10px;
+}
+
+.btn-submit {
+  width: 220px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: -10px;
+}
+
+.sign-page {
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 16px;
+}
+}
+@media only screen and (max-width:300px) {
+  .logo-img {
+    top: 8%;
+    left: 4%;
+}
+.logo-img img {
+  width: 200px;
+}
+
+/* Box */
+#login-box {
+    top: 16%;
+    left: 4%;
+    width: 240px;
+    padding: 10px 10px 0 10px;   
+}
+
+/* Heading Setting */
+.login-heading {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.login-heading-1 {
+    padding-bottom: 3px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.login-heading-2 {
+  font-size: 10px;
+  line-height: 12px;
+  color: #333333;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Form Settings Email */
+.form-email-pass {
+  margin-top: 0;
+}
+
+.form-email label {
+  font-size: 12px;
+  line-height: 14px;
+  padding-bottom: 0;
+}
+
+.form-email input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* Form Settings Password */
+.form-pass label {
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 14px;
+  padding-bottom: 0;
+}
+
+.form-pass a {
+  margin-left: 60px; 
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.form-pass input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* Password */
+.pass-msg {
+  padding-top: 2px;
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.form-check-label {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.form-check-input {
+  width: 10px;
+  height: 10px;
+}
+
+.btn-submit {
+  width: 220px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: -10px;
+}
+
+.sign-page {
+  font-size: 12px;
+  padding-top: 5px;
+  line-height: 16px;
+}
+}
