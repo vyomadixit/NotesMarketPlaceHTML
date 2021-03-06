@@ -69,7 +69,6 @@ body {
     line-height: 38px;
 }
 
-
 .login-heading-2 {
   font-size: 15px;
   font-weight: 400;
@@ -77,34 +76,88 @@ body {
   color: #333333;
 }
 
+.sign-heading-3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  color: rgb(41, 184, 60);
+}
+.sign-heading-3 img {
+  width: 15px;
+  height: 15px;
+}
+/* LOGO */
+.forget-img {
+  top: 25%;
+  left: 42%;
+  z-index: 1;
+  margin-bottom: 5px;
+  padding: 0;
+  position: fixed;
+}
+
+/* Box */
+
+#forget-box {
+  background-color: #fff;
+  position: fixed;
+  top: 35%;
+  left: 32%;
+  width: 530px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+  margin-right: 10px;
+  
+}
+
+/* Heading Setting */
+.forget-heading-1 {
+  color: #6255a5;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.forget-heading-2 {
+font-size: 12px;
+padding-top: 10px;
+line-height: 15px;
+color: #333333;
+}
 /* Form Settings Email */
+
+/* Form Settings Email */
+
+
+.form-email label, .form-pass label{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #333333;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.form-email input::placeholder, .form-pass input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8a8a9a;
+}
+
+.field-icon {
+    margin: -30px 0 0 0;
+    position: relative;
+    z-index: 5; 
+}
 .form-email-pass {
   margin-top: 25px;
-}
-
-.form-email label {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #333333;
-  padding-bottom: 5px;
-}
-
-.form-email input::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #000;
-}
-
-/* Form Settings Password */
-.form-pass label {
-  font-size: 16px;
-  padding-top: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #333333;
-  padding-bottom: 5px;
 }
 
 .form-pass a {
@@ -113,19 +166,6 @@ body {
   font-weight: 400;
   line-height: 20px;
   color: #6255a5;
-}
-
-.form-pass input::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #8a8a9a;
-}
-
-.field-icon {
-  margin: -30px 0 0 0;
-  position: relative;
-  z-index: 5; 
 }
 
 /* Password */
@@ -185,9 +225,19 @@ body {
   .logo-img {
     top: 15%;
   }
+  #forget-box {
+    left: 38%;
+    top: 22%;
+  }
+  .forget-img {
+    top: 15%;
+  }
 }
 @media only screen and (min-width:1100px) and (max-width:1600px) {
   #login-box {
+    left: 35%;
+  }
+  #forget-box {
     left: 35%;
   }
 }
@@ -202,8 +252,18 @@ body {
     top: 2%;
     left: 40%;
 }
+#forget-box {
+  top: 10%;
+  left: 28%;
+  padding-bottom: 0;
+  padding-top: 0;
 }
-@media only screen and (min-width:660px) and (max-width:770px) {
+.forget-img {
+  top: 2%;
+  left: 40%;
+}
+}
+@media only screen and (min-width:661px) and (max-width:770px) {
   #login-box {
     top: 12%;
     left: 18%;
@@ -213,13 +273,31 @@ body {
     top: 5%;
     left: 32%;
 }
+#forget-box {
+  top: 12%;
+  left: 18%;
+  padding-bottom: 0;
 }
-@media only screen and (min-width:581px) and (max-width:660px) {
+.forget-img {
+  top: 5%;
+  left: 32%;
+}
+}
+@media only screen and (min-width:581px) and (max-width:661px) {
   #login-box {
     left: 8%;
   }
   .logo-img {
     left: 18%;
+}
+.login-heading-2 {
+  padding-top: 6px;
+}
+#forget-box {
+  left: 8%;
+}
+.forget-img {
+  left: 18%;
 }
 }
 @media only screen and (min-width:540px) and (max-width:581px) {
@@ -230,11 +308,20 @@ body {
     left: 20%;
   
 }
+.login-heading-2 {
+  padding-top: 6px;
+}
+#forget-box {
+  left: 1%;
+}
+.forget-img {
+  left: 20%;
+}
 }
 
 @media only screen and  (min-width:300px) and (max-width:539px) {
   .logo-img {
-    top: 8%;
+    top: 3%;
     left: 22%;
 }
 .logo-img img {
@@ -243,7 +330,7 @@ body {
 
 /* Box */
 #login-box {
-    top: 16%;
+    top: 11%;
     left: 18%;
     width: 240px;
     padding: 10px 10px 0 10px;   
@@ -258,15 +345,57 @@ body {
 .login-heading-1 {
     padding-bottom: 3px;
     font-size: 24px;
-    font-weight: 600;
-    line-height: 24px;
+    line-height: 12px;
 }
 .login-heading-2 {
   font-size: 10px;
   line-height: 12px;
-  color: #333333;
   padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 6px;
+}
+.sign-heading-3 {
+  font-size: 8px;
+  line-height: 11px;
+  margin-bottom: 0;
+}
+.sign-heading-3 img {
+  width: 8px;
+  height: 8px;
+}
+.forget-img {
+  top: 8%;
+  left: 22%;
+}
+.forget-img img {
+width: 200px;
+}
+
+/* Box */
+#forget-box {
+  top: 16%;
+  left: 18%;
+  width: 240px;
+  padding: 10px 10px 0 10px;   
+}
+
+/* Heading Setting */
+.forget-heading {
+padding-left: 0;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+.forget-heading-1 {
+  padding-bottom: 3px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.forget-heading-2 {
+font-size: 10px;
+line-height: 12px;
+padding-bottom: 0;
+margin-bottom: 0;
 }
 
 /* Form Settings Email */
@@ -276,34 +405,21 @@ body {
 .form-group {
   margin: 0 0 10px 0;
 }
-.form-email label {
+.form-email label,  .form-pass label {
   font-size: 12px;
   line-height: 14px;
   padding-bottom: 0;
 }
 
-.form-email input::placeholder {
+.form-email input::placeholder, .form-pass input::placeholder {
   font-size: 12px;
   line-height: 14px;
-}
-
-/* Form Settings Password */
-.form-pass label {
-  font-size: 12px;
-  padding-top: 5px;
-  line-height: 14px;
-  padding-bottom: 0;
 }
 
 .form-pass a {
   margin-left: 60px; 
   font-size: 12px;
   line-height: 12px;
-}
-
-.form-pass input::placeholder {
-  font-size: 12px;
-  line-height: 14px;
 }
 
 /* Password */
@@ -331,7 +447,7 @@ body {
   height: 30px;
   font-size: 14px;
   line-height: 20px;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 .sign-page {
@@ -339,6 +455,7 @@ body {
   padding-top: 5px;
   line-height: 16px;
 }
+
 }
 @media only screen and (max-width:300px) {
   .logo-img {
@@ -371,44 +488,72 @@ body {
 .login-heading-2 {
   font-size: 10px;
   line-height: 12px;
-  color: #333333;
   padding-bottom: 0;
   margin-bottom: 0;
 }
+.sign-heading-3 {
+  font-size: 8px;
+  line-height: 11px;
+  margin-bottom: 0;
+}
+.sign-heading-3 img {
+  width: 8px;
+  height: 8px;
+}
+.forget-img {
+  top: 8%;
+  left: 2%;
+}
+.forget-img img {
+width: 200px;
+}
 
+/* Box */
+#forget-box {
+  top: 16%;
+  left: 2%;
+  width: 250px;
+  padding: 15px 15px 15px 15px;   
+}
+
+/* Heading Setting */
+.forget-heading {
+padding-left: 0;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+.forget-heading-1 {
+  padding-bottom: 3px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.forget-heading-2 {
+font-size: 10px;
+line-height: 12px;
+padding-bottom: 0;
+margin-bottom: 0;
+}
 /* Form Settings Email */
 .form-email-pass {
   margin-top: 0;
 }
 
-.form-email label {
+.form-email label, .form-pass label {
   font-size: 12px;
   line-height: 14px;
   padding-bottom: 0;
 }
 
-.form-email input::placeholder {
+.form-email input::placeholder, .form-pass input::placeholder  {
   font-size: 12px;
   line-height: 14px;
-}
-
-/* Form Settings Password */
-.form-pass label {
-  font-size: 12px;
-  padding-top: 5px;
-  line-height: 14px;
-  padding-bottom: 0;
 }
 
 .form-pass a {
   margin-left: 60px; 
   font-size: 12px;
   line-height: 12px;
-}
-
-.form-pass input::placeholder {
-  font-size: 12px;
-  line-height: 14px;
 }
 
 /* Password */
@@ -436,7 +581,7 @@ body {
   height: 30px;
   font-size: 14px;
   line-height: 20px;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
 .sign-page {
